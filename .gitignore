@@ -1,0 +1,16 @@
+﻿# Common PHP ignores
+debug_output.txt
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.temp
+
+# XAMPP specific
+/php/
+/apache/
+/mysql/
+
+# Project specific
+/public/uploads/*
+!/public/uploads/.gitkeep
