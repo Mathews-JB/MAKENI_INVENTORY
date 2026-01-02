@@ -1,0 +1,2 @@
+-- This file has been consolidated into SCHOOL_CONVERSION_PHASE_1.sql.
+-- Please use that file for the migration.

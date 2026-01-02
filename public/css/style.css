@@ -1,0 +1,219 @@
+/* Global Styles */
+:root {
+    --sidebar-bg: #111827;
+    --sidebar-text: #9ca3af;
+    --sidebar-active: #ffffff;
+    --primary-color: #ef4444;
+    /* Red/Orange for buttons */
+    --accent-yellow: #fbbf24;
+    /* For the gold card */
+    --bg-light: #f3f4f6;
+    --text-dark: #1f2937;
+    --font-primary: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: #ffffff;
+    /* Main background is white/clean */
+}
+
+/* Sidebar Overrides */
+.sidebar {
+    background-color: var(--sidebar-bg) !important;
+    background: var(--sidebar-bg) !important;
+    /* Remove gradient */
+}
+
+.sidebar-link {
+    color: var(--sidebar-text);
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-link:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.sidebar-link.active {
+    color: #ffffff;
+    border-left: 3px solid #ffffff;
+    /* White border for active */
+    background-color: transparent;
+    /* Clean active state */
+}
+
+.sidebar-link i {
+    width: 24px;
+    /* Fixed width for icons alignment */
+    font-size: 1.25rem;
+    /* Standard icon size - 20px */
+    text-align: center;
+}
+
+/* Topbar Styles */
+.search-bar {
+    border: 1px solid #e5e7eb;
+    border-radius: 9999px;
+    /* Pill shape */
+    padding: 0.5rem 1rem;
+    width: 300px;
+    background-color: #ffffff;
+}
+
+.btn-primary {
+    background-color: #ea580c;
+    /* Burnt orange/red */
+    color: white;
+    border-radius: 9999px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+/* Dashboard Cards */
+.card-clean {
+    background: #ffffff;
+    border: 1px solid #f3f4f6;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.card-gold {
+    background: #facc15;
+    /* Yellow/Gold */
+    color: #1f2937;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-gold::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.status-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.status-received {
+    background-color: #facc15;
+    color: #000;
+}
+
+.status-payment {
+    background-color: #ef4444;
+    color: white;
+}
+
+/* Fallback Styles for Notifications (if Tailwind fails) */
+.notification-card {
+    background: #ffffff;
+    border: 1px solid #f3f4f6;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.notification-card:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.rounded-2xl {
+    border-radius: 1rem;
+}
+
+.p-8 {
+    padding: 2rem;
+}
+
+.shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.border {
+    border-width: 1px;
+}
+
+.border-gray-100 {
+    border-color: #f3f4f6;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.space-x-3>*+* {
+    margin-left: 0.75rem;
+}
+
+.space-y-4>*+* {
+    margin-top: 1rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-gray-900 {
+    color: #111827;
+}
+
+.text-gray-500 {
+    color: #6b7280;
+}
+
+/* Quick Actions Custom Button */
+.btn-quick-action {
+    background-color: #f59e0b !important;
+    /* Amber 500 - Yellowish Orange */
+    color: #ffffff !important;
+    transition: all 0.3s ease;
+}
+
+.btn-quick-action:hover {
+    background-color: #d97706 !important;
+    /* Amber 600 - Darker on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.btn-quick-action i,
+.btn-quick-action p {
+    color: #ffffff !important;
+}
